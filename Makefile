@@ -6,7 +6,7 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/11 13:32:21 by gfielder          #+#    #+#              #
-#    Updated: 2019/02/13 20:35:03 by gfielder         ###   ########.fr        #
+#    Updated: 2019/02/13 20:38:32 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,11 +77,60 @@ SRC=src/ft_atoi.c \
 	src/ft_strsub.c \
 	src/ft_strtrim.c \
 	src/ft_tolower.c \
-	src/ft_toupper.c \
+	src/ft_toupper.c
 
 # Corresponding list of object files contained in bin/
-OBJ:=$(shell echo $(SRC) | sed 's/$(SRCDIR)\//$(OBJDIR)\//g' | sed 's/\.c/\.o/g')
-
+# OBJ:=$(shell echo $(SRC) | sed 's/$(SRCDIR)\//$(OBJDIR)\//g' | sed 's/\.c/\.o/g')
+OBJ=bin/ft_atoi.o \
+	bin/ft_bzero.o \
+	bin/ft_isalnum.o \
+	bin/ft_isalpha.o \
+	bin/ft_isascii.o \
+	bin/ft_isdigit.o \
+	bin/ft_isprint.o \
+	bin/ft_itoa.o \
+	bin/ft_itoa_base.o \
+	bin/ft_lstadd.o \
+	bin/ft_lstcpy_elem.o \
+	bin/ft_lstdel.o \
+	bin/ft_lstdelone.o \
+	bin/ft_lstiter.o \
+	bin/ft_lstmap.o \
+	bin/ft_lstnew.o \
+	bin/ft_lstnew_byref.o \
+	bin/ft_memalloc.o \
+	bin/ft_memccpy.o \
+	bin/ft_memchr.o \
+	bin/ft_memcmp.o \
+	bin/ft_memcpy.o \
+	bin/ft_memdel.o \
+	bin/ft_memmove.o \
+	bin/ft_memset.o \
+	bin/ft_putchar.o \
+	bin/ft_putchar_fd.o \
+	bin/ft_putendl.o \
+	bin/ft_putendl_fd.o \
+	bin/ft_putnbr.o \
+	bin/ft_putnbr_fd.o \
+	bin/ft_putstr.o \
+	bin/ft_putstr_fd.o \
+	bin/ft_strcat.o \
+	bin/ft_strchr.o \
+	bin/ft_strclr.o \
+	bin/ft_strcmp.o \
+	bin/ft_strcpy.o \
+	bin/ft_strdel.o \
+	bin/ft_strdup.o \
+	bin/ft_strequ.o \
+	bin/ft_striter.o \
+	bin/ft_striteri.o \
+	bin/ft_strjoin.o \
+	bin/ft_strlcat.o \
+	bin/ft_strlen.o \
+	bin/ft_strmap.o \
+	bin/ft_strmapi.o \
+	bin/ft_strncat.o \
+	bin/ft_strncmp.o
 # Make all target
 all: $(NAME)
 
