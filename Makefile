@@ -6,7 +6,7 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/11 13:32:21 by gfielder          #+#    #+#              #
-#    Updated: 2019/02/13 20:38:32 by gfielder         ###   ########.fr        #
+#    Updated: 2019/02/13 21:06:26 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME=libft.a
 OBJDIR=bin
 SRCDIR=src
 INCDIR=./
-CC=gcc
+CC=clang
 CFLAGS=-Wall -Wextra -Werror
 
 SRC=src/ft_atoi.c \
