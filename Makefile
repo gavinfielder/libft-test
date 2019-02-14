@@ -6,7 +6,7 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/11 13:32:21 by gfielder          #+#    #+#              #
-#    Updated: 2019/02/13 20:05:18 by gfielder         ###   ########.fr        #
+#    Updated: 2019/02/13 20:35:03 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ OBJDIR=bin
 SRCDIR=src
 INCDIR=./
 CC=gcc
-CFLAGS=-Wall -Wextra -Werror -g
+CFLAGS=-Wall -Wextra -Werror
 
 SRC=src/ft_atoi.c \
 	src/ft_bzero.c \
