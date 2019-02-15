@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/24 11:40:55 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:43:37 by gfielder         ###   ########.fr       */
+/*   Created: 2019/02/14 19:36:06 by gfielder          #+#    #+#             */
+/*   Updated: 2019/02/14 20:09:00 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, const char *src)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (src[i] != '\0')
+const static char	g_base[] = "0123456789abcdef";
+
+void				ft_print_hex(unsigned int n)
+{
+	if (n >= 16)
 	{
-		dest[i] = src[i];
-		i++;
+		ft_print_hex(n / 16);
+		write(1, g_base + (n % 16), 1);
 	}
-	dest[i] = '\0';
-	return (dest);
+	else
+	{
+		write(1, g_base + n, 1);
+	}
 }

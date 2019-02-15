@@ -1,41 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/13 10:01:30 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:14:38 by gfielder         ###   ########.fr       */
+/*   Created: 2019/02/13 09:34:05 by gfielder          #+#    #+#             */
+/*   Updated: 2019/02/14 20:09:41 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <libft.h>
+#include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char			*r;
-	unsigned int	i;
-	size_t			len_s1;
-	size_t			len_s2;
+	char	*r;
+	int		i;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s == NULL || f == NULL)
 		return (NULL);
-	len_s1 = ft_strlen(s1);
-	len_s2 = ft_strlen(s2);
-	r = ft_strnew(len_s1 + len_s2);
+	r = ft_strnew(ft_strlen(s));
 	if (r == NULL)
 		return (NULL);
 	i = 0;
-	while (i < len_s1)
+	while (s[i])
 	{
-		r[i] = s1[i];
-		i++;
-	}
-	while (i - len_s1 < len_s2)
-	{
-		r[i] = s2[i - len_s1];
+		r[i] = f(s[i]);
 		i++;
 	}
 	return (r);

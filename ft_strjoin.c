@@ -1,34 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/24 12:27:04 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:45:10 by gfielder         ###   ########.fr       */
+/*   Created: 2019/02/13 10:01:30 by gfielder          #+#    #+#             */
+/*   Updated: 2019/02/14 20:09:27 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
-char	*ft_strncpy(char *dest, const char *src, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	size_t	j;
+	char			*r;
+	unsigned int	i;
+	size_t			len_s1;
+	size_t			len_s2;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+	len_s1 = ft_strlen(s1);
+	len_s2 = ft_strlen(s2);
+	r = ft_strnew(len_s1 + len_s2);
+	if (r == NULL)
+		return (NULL);
 	i = 0;
-	j = 0;
-	while (i < n)
+	while (i < len_s1)
 	{
-		if (i == j && src[i] != '\0')
-		{
-			dest[i] = src[i];
-			j++;
-		}
-		else
-			dest[i] = '\0';
+		r[i] = s1[i];
 		i++;
 	}
-	return (dest);
+	while (i - len_s1 < len_s2)
+	{
+		r[i] = s2[i - len_s1];
+		i++;
+	}
+	return (r);
 }

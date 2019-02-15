@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/13 09:34:05 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 09:43:40 by gfielder         ###   ########.fr       */
+/*   Created: 2018/09/24 12:27:04 by gfielder          #+#    #+#             */
+/*   Updated: 2019/02/14 21:37:24 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <libft.h>
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
-	char	*r;
-	int		i;
+	size_t	i;
+	size_t	j;
 
-	if (s == NULL || f == NULL)
-		return (NULL);
-	r = ft_strnew(ft_strlen(s));
-	if (r == NULL)
-		return (NULL);
 	i = 0;
-	while (s[i])
+	j = 0;
+	while (i < n)
 	{
-		r[i] = f(s[i]);
+		if (i == j && src[i] != '\0')
+		{
+			dst[i] = src[i];
+			j++;
+		}
+		else
+			dst[i] = '\0';
 		i++;
 	}
-	return (r);
+	return (dst);
 }
