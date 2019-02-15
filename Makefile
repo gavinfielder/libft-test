@@ -6,12 +6,12 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/11 13:32:21 by gfielder          #+#    #+#              #
-#    Updated: 2019/02/14 21:48:16 by gfielder         ###   ########.fr        #
+#    Updated: 2019/02/15 14:59:47 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME=libft.a
-CC=gcc
+CC=clang
 CFLAGS=-Wall -Wextra -Werror
 
 SRC=ft_atoi.c \
@@ -88,11 +88,9 @@ all: $(NAME)
 # Make library
 $(NAME): $(OBJ)
 	ar rs $(NAME) $(OBJ)
-	ranlib $(NAME)
 
 # Make object files - this runs for each .o that needs creating
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
-	@mkdir -p bin
+%.o: %.c
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
