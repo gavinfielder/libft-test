@@ -6,7 +6,7 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/15 20:10:52 by gfielder          #+#    #+#              #
-#    Updated: 2019/02/15 20:12:15 by gfielder         ###   ########.fr        #
+#    Updated: 2019/02/15 20:13:30 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rs $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) -c $(CFLAGS) $< -o $@
+$(OBJ): $(SRC)
+	$(CC) -c $(CFLAGS) $(SRC)
 
 clean:
 	rm *.o
