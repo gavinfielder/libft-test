@@ -15,12 +15,13 @@ $(OBJ): $(SRC)
 	$(CC) $(CFLAGS) -c $(SRC)
 
 clean:
-	rm *.o
+	-rm *.o
 
 fclean:
-	rm -f *.o
-	rm -f libft.a
+	-rm *.o
+	-rm libft.a
 
 re:
-	make fclean
+	-rm *.o
+	-rm libft.a
 	make all
