@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 20:33:22 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 20:35:17 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:37:27 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 21:15:54 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:47:11 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:34:00 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
 {

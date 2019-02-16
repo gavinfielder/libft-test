@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 17:14:45 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:34:25 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:36:15 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

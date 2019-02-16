@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 11:20:40 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:13:04 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:34:10 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 size_t	ft_strlen(const char *str)
 {

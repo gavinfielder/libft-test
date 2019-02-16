@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 09:28:08 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 09:29:47 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:31:48 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 void	ft_strclr(char *s)
 {

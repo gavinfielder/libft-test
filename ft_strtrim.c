@@ -6,16 +6,16 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 10:14:06 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:25:35 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:43:19 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 #include "libft.h"
 
 static int			is_ws(char c)
 {
-	if (c == ' ' || c == ',' || c == '\t' || c == '\n')
+	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
 	return (0);
 }

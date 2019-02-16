@@ -6,15 +6,12 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/12 11:03:54 by exam              #+#    #+#             */
-/*   Updated: 2019/02/13 15:35:06 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:51:08 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-
-#ifndef ABS
-# define ABS(x) ((x) < 0 ? (-(x)) : (x))
-#endif
+#include "libft.h"
 
 const static char	g_base[] = "0123456789ABCDEF";
 

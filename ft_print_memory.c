@@ -6,12 +6,12 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/14 11:43:41 by exam              #+#    #+#             */
-/*   Updated: 2019/02/14 21:18:59 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:28:35 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stddef.h>
+#include <string.h>
 
 const static char	g_base[] = "0123456789abcdef";
 

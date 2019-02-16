@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 21:09:51 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:37:49 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:35:49 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 char	*ft_strncat(char *dest, const char *src, size_t nb)
 {

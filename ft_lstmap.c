@@ -6,7 +6,7 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 16:25:12 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:09:22 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:20:02 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		if (tail == NULL)
 		{
-			tail = f(ft_lstcpy_elem(lst));
+			tail = f(lst);
 			if (tail == NULL)
 				return (NULL);
 			head = tail;
 		}
 		else
 		{
-			tail->next = f(ft_lstcpy_elem(lst));
+			tail->next = f(lst);
 			if (tail->next == NULL)
 				return (NULL);
 			tail = tail->next;

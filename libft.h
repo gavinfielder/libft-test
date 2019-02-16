@@ -6,14 +6,20 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 19:50:30 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/15 14:51:52 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:55:05 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
+# include <string.h>
+
+# ifndef ABS
+#  define ABS(x) ((x) < 0 ? (-(x)) : (x))
+# endif
+
+# define MY_INT_MIN -2147483648
 
 /*
 ** ------------------------------ Memory functions -----------------------------

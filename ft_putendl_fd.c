@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 15:53:23 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 15:53:31 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:29:25 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char const *str, int fd)

@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 17:04:31 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:23:27 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:25:00 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

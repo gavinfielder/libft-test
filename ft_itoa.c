@@ -6,15 +6,12 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 15:23:23 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 17:22:23 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:50:52 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-
-#ifndef ABS
-# define ABS(x) ((x) < 0 ? (-(x)) : (x))
-#endif
+#include "libft.h"
 
 static char	*format_return(char *buff, int len)
 {

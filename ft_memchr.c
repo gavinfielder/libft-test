@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 19:19:57 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/11 19:24:46 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:25:37 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

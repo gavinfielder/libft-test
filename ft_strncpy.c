@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 12:27:04 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/14 21:37:24 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:36:49 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 char	*ft_strncpy(char *dst, const char *src, size_t n)
 {

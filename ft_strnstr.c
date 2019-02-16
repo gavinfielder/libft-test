@@ -6,11 +6,11 @@
 /*   By: gfielder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 20:44:07 by gfielder          #+#    #+#             */
-/*   Updated: 2019/02/13 09:46:05 by gfielder         ###   ########.fr       */
+/*   Updated: 2019/02/15 18:37:15 by gfielder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t max_len)
